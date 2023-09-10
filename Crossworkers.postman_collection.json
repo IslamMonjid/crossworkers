@@ -1,0 +1,128 @@
+{
+	"info": {
+		"_postman_id": "36188fbf-40ce-4099-a09d-54c1307ddec3",
+		"name": "Crossworkers",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4746279"
+	},
+	"item": [
+		{
+			"name": "filter",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "year",
+							"value": "1999",
+							"type": "text"
+						},
+						{
+							"key": "brand",
+							"value": "3",
+							"type": "text"
+						},
+						{
+							"key": "transmition",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "color",
+							"value": "3",
+							"type": "text"
+						},
+						{
+							"key": "model",
+							"value": "GLC",
+							"type": "text"
+						},
+						{
+							"key": "horsePower",
+							"value": "2000",
+							"type": "text"
+						},
+						{
+							"key": "numberOfSeats",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/cars/filter",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"cars",
+						"filter"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "index",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/cars",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"cars"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetByID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/car/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"car",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
